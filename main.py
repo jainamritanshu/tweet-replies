@@ -4,7 +4,7 @@ CONSUMER_KEY = keys['c_key']
 CONSUMER_SECRET = keys['c_secret']
 ACCESS_TOKEN = keys['a_token']
 ACCESS_TOKEN_SECRET = keys['a_token_s']auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
-auth.set_access_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+auth.set_a_token(ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
 api = tweepy.API(auth)twts = api.search(q="Leviathan")
 
 #list of specific strings we want to check for in Tweets
